@@ -80,7 +80,7 @@ const start = async () => {
 
     const parsedUrl = parse(req.url, true)
     const { query } = parsedUrl
-
+//if see any error replace query with parsedUrl.query
     return nextApp.render(req, res, '/cart', query)
   })
 
